@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . /app
 RUN composer install
 
-FROM php:7.3-apache
+FROM php:7.2-apache
 
 RUN apt-get update \
     && apt-get install -y cron gnupg2 graphviz icu-devtools libicu-dev libssl-dev unzip vim zlib1g-dev nasm libjpeg62-turbo-dev libpng-dev libwebp-dev libxpm-dev libfreetype6-dev libsasl2-dev libssl-dev zlib1g-dev
